@@ -76,7 +76,7 @@ const cartReducer = (state, action) => {
 const CartProvider = ({ children }) => {
   const [state, dispatch] = useReducer(cartReducer, initialState)
 
-  // Remove an item from the cart
+  
   const removeFromCart = (product) => {
     dispatch({ type: REMOVE_ITEM, payload: product })
   }
